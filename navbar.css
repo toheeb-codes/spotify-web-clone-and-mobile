@@ -1,0 +1,207 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    height: 70px;
+    padding: 0 16px;
+    z-index: 100;
+}
+.spotify-logo{
+    height: 45px;
+    cursor: pointer;
+}
+.home-icon{
+    height: 35px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 15px;
+   
+  
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 182, 182);
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex: 1;
+    max-width: 400px;
+  
+}
+.search-icon,
+.browse-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.search-input{
+   background: transparent;
+   border: none;
+   outline: none;
+   width: 100%;
+   font-size: 16px;
+   margin-left: 10px;
+}
+.browse-icon{
+   margin: auto;
+   
+}
+.nav-links{
+    display: flex;
+    margin: 0;
+    gap: 16px;
+    align-items: center;
+    margin-left:auto;
+   
+}
+.link1{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.link2{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.link3{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.divider {
+  width: 1.5px;
+  height: 20px;
+  background-color: gray;
+  margin-left: 20px;
+}
+.link4{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0; 
+    margin-left: 30px;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.link5{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: color 0.1s;
+}
+.login-btn{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 13px;
+    cursor: pointer;
+   
+    
+}
+.link1:hover,
+.link2:hover,
+.link3:hover,
+.link4:hover,
+.link5:hover,
+.login-btn:hover{
+    color: gray;
+}
+
+
+.hamburger{
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+/* hide hamburger on the desktop */
+.hamburger{
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  /* hide links */
+  .nav-links {
+    display: none;
+  }
+  .browse-icon{
+    margin-left: auto;
+  }
+  /* hide home icon */
+  .home-icon {
+    display: none;
+  }
+
+  /* show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* shrink logo */
+  .spotify-logo {
+    height: 30px;
+  }
+
+  /* search bar fills space */
+  .search-container {
+    flex: 1;
+    max-width: 100%;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spotify-logo {
+    height: 25px;
+  }
+
+
+  
+}
+
+@media (max-width: 400px){
+    .search-input{
+        font-size: 13px;
+    }
+}

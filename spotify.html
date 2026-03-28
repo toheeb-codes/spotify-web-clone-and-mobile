@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify web player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="bottom-bar.css">
+    <link rel="stylesheet" href="albums-style.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="wrapcontainer.css" />
+    <link rel="stylesheet" href="main-content.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navigation">
+      <img class="spotify-logo" src="spotify-logo-new.png" alt="" />
+      <img class="home-icon" src="home-new.avif" alt="" />
+      <div class="search-container">
+        <img class="search-icon" src="search.png" alt="" />
+        <input
+          class="search-input"
+          type="text"
+          placeholder="what do you want to play"
+        />
+        <img class="browse-icon" src="browse.jpg" alt="" />
+      </div>
+      <div class="nav-links">
+        <a class="link1" href="">Premium</a>
+        <a class="link2" href="">Support</a>
+        <a class="link3" href="">Download</a>
+        <div class="divider"></div>
+        <a class="link4" href="">Install app</a>
+        <a class="link5" href="">Sign up</a>
+        <button class="login-btn">Log in</button>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- container that wrap my side bar and main content into two grid -->
+    <div class="wrap-container">
+      <div class="side-bar">
+        <div class="sidebar1">
+          <p class="library">Your Library</p>
+          <button class="create-btn">
+            <span class="plus">+</span>
+            Create
+          </button>
+        </div>
+        <div class="slider-track">
+          <div class="slide-content">
+            <p class="p1">Create your first playlist</p>
+            <p class="p2">It's easy, we'll help you</p>
+            <button class="slide-create-btn">Create playlist</button>
+          </div>
+          <div class="slide-content">
+            <p class="p1">Let's find some podcast to follow</p>
+            <p class="p2">we'll keep you updated on new episodes</p>
+            <button class="slide-create-btn">Browse podcasts</button>
+          </div>
+        </div>
+        <div class="link-header">
+          <div class="link-footer">
+            <a href="">Legal</a>
+            <a href="">Safety&privacy Center</a>
+            <a href="">Cookies</a>
+            <a href="">About Ads</a>
+            <a href="">Accessibility</a>
+            <a href="">Cookies</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="trending-head">
+          <a href="" class="trending1">Trending Songs</a>
+          <a href="" class="trending2">Show all</a>
+        </div>
+        <div class="my-grid">
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="album-pics/images.jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Lonely at the top</p>
+              <p class="alb-descript2">Asake</p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="album-pics/images (1).jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">City boy</p>
+              <p class="alb-descript2">Burna boy</p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="album-pics/images (2).jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Suferring & smiling</p>
+              <p class="alb-descript2">Fela</p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="album-pics/images (3).jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">High tension</p>
+              <p class="alb-descript2">Bella shmurda</p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="album-pics/images (4).jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Paparazzi</p>
+              <p class="alb-descript2">Shoday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending-head">
+          <a href="" class="trending1">Popular artists</a>
+          <a href="" class="trending2">Show all</a>
+        </div>
+        <div class="my-grid">
+          <div class="song-grid-artist">
+            <div class="position-play">
+              <img
+                class="album1-popular"
+                src="album-popular-artist/wizkid.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description-popular">
+              <p class="alb-descript1">Wizkid</p>
+              <p class="alb-descript2">Artist</p>
+            </div>
+          </div>
+
+          <div class="song-grid-artist">
+            <div class="position-play">
+              <img
+                class="album1-popular"
+                src="album-popular-artist/ayra starr.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description-popular">
+              <p class="alb-descript1">Ayra starr</p>
+              <p class="alb-descript2">Artist</p>
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="song-grid-artist">
+            <div class="position-play">
+              <img
+                class="album1-popular"
+                src="album-popular-artist/tems.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description-popular">
+              <p class="alb-descript1">Tems</p>
+              <p class="alb-descript2">Artist</p>
+            </div>
+          </div>
+
+          <div class="song-grid-artist">
+            <div class="position-play">
+              <img
+                class="album1-popular"
+                src="album-popular-artist/rema.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description-popular">
+              <p class="alb-descript1">Rema</p>
+              <p class="alb-descript2">Artist</p>
+            </div>
+          </div>
+
+          <div class="song-grid-artist">
+            <div class="position-play">
+              <img
+                class="album1-popular"
+                src="album-popular-artist/davido.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description-popular">
+              <p class="alb-descript1">Davido</p>
+              <p class="alb-descript2">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-head">
+          <a href="" class="trending1">Popular albums and singles</a>
+          <a href="" class="trending2">Show all</a>
+        </div>
+        <div class="my-grid">
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-albums-single/5ive davido.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">5ive</p>
+              <p class="alb-descript2">Davido</p>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="song-grid">
+            <!-- <div class="song-grid"> -->
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-albums-single/higer-burna boy.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Higher</p>
+              <p class="alb-descript2">Burna boy</p>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="song-grid">
+            <!-- <div class="song-grid"> -->
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-albums-single/iron boy- black sheriff.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Iron-boy</p>
+              <p class="alb-descript2">Black sheriff</p>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="song-grid">
+            <!-- <div class="song-grid"> -->
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-albums-single/lungu boy- asake.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Lungu boy</p>
+              <p class="alb-descript2">Asake</p>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="song-grid">
+            <!-- <div class="song-grid"> -->
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-albums-single/mario-kart seyi.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <p class="alb-descript1">Mario kart</p>
+              <p class="alb-descript2">Seyi vibez</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="trending-head">
+          <a href="" class="trending1">Popular radio</a>
+          <a href="" class="trending2">Show all</a>
+        </div>
+        <div class="my-grid">
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="popular-radio/en.jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">With Davido,Bayanni,KAESTYLE and more</p>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-radio/ayo maff et all.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">With Llona,Muyeez,Mohbad and more</p>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="song-grid">
+            <!-- <div class="song-grid"> -->
+            <div class="position-play1">
+              <img class="album1" src="popular-radio/fola et all.jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">With kidd Carder,Asake,SAMAD and more</p>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="popular-radio/seyi et all.jfif" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">With FOLA,Muyeez,Asake and more</p>
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="popular-radio/wizkid.jfif"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">With DJ Tunez,StarBoy,Odumodublvck and more</p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="trending-head">
+          <a href="" class="trending1">Feature chart</a>
+          <a href="" class="trending2">Show all</a>
+        </div>
+        <div class="my-grid">
+          <!-- <div class="song-grid"> -->
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="feature-chart/global.jpg" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">
+                Your weekly update of the most played track...
+              </p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="feature-chart/top-nigeria.jpg" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">
+                Your weekly update of the most played track...
+              </p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="feature-chart/top 50 global.jpg"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">
+                Your daily update of the most played track...
+              </p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img class="album1" src="feature-chart/viral global.jpg" alt="" />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">
+                Your weekly update of the most viral track...
+              </p>
+            </div>
+          </div>
+
+          <div class="song-grid">
+            <div class="position-play1">
+              <img
+                class="album1"
+                src="feature-chart/top 50 nigeria.jpg"
+                alt=""
+              />
+              <img
+                class="play-icon1"
+                src="album-popular-artist/play-icon-design.jpg"
+                alt=""
+              />
+            </div>
+            <div class="description">
+              <!-- <p class="alb-descript1">5ive</p> -->
+              <p class="alb-descript3">
+                Your weekly update of the most played track...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content-footer-grid">
+          <div class="flex-footer">
+            <div class="company-footer">
+              <p class="companyfooter">Company</p>
+              <a href="" class="footerlink">About</a>
+              <a href="" class="footerlink">Jobs</a>
+              <a href="" class="footerlink">For the record</a>
+            </div>
+          </div>
+
+          <div class="flex-footer">
+            <div class="company-footer">
+              <p class="companyfooter">Communities</p>
+              <a href="" class="footerlink">For Artists</a>
+              <a href="" class="footerlink">developers</a>
+              <a href="" class="footerlink">Advertising</a>
+              <a href="" class="footerlink">Investors</a>
+              <a href="" class="footerlink">Vendors</a>
+            </div>
+          </div>
+
+          <div class="flex-footer">
+            <div class="company-footer">
+              <p class="companyfooter">Useful links</p>
+              <a href="" class="footerlink">Support</a>
+              <a href="" class="footerlink">Free Mobile App</a>
+              <a href="" class="footerlink">Popular by country</a>
+              <a href="" class="footerlink">Import your music</a>
+            </div>
+          </div>
+
+          <div class="flex-footer">
+            <div class="company-footer">
+              <p class="companyfooter">Spotify plans</p>
+              <a href="" class="footerlink">Premium individual</a>
+              <a href="" class="footerlink">Premium Duo</a>
+              <a href="" class="footerlink">Premium Family</a>
+              <a href="" class="footerlink">Premium student</a>
+              <a href="" class="footerlink">Spotify Free</a>
+            </div>
+          </div>
+          
+          <div class="flex-footer">
+            <div class="company-footer-icon">
+             <img class="footer-icon1" src="footer-icon/insta icon.png" alt="">
+             <img class="footer-icon2" src="footer-icon/x-icon.png" alt="">
+             <img class="footer-icon3" src="footer-icon/facebook-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Spotify AB</p>
+    </div>
+
+
+    <div class="bottom-bar">
+      <div class="bottom1">
+        <p class="bottom-p1">Preview of spotify</p>
+        <p>Sign up to get unlimited songs and podcast with occasional ads.No credit card Needed</p>
+      </div>
+      <button class="bottom-bar-button">Sign up free</button>
+    </div>
+  </body>
+</html>
